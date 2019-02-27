@@ -6,7 +6,7 @@
  * 
  * @params options = {} of the following parameters.
  * @param selector
- * @param state		[Either true|false : denotes whether to showing loading View OR disable loading View]
+ * @param state		[Either true|false : denotes whether to show loadingView OR disable loadingView]
  * @param loadingImage	[optional image you would like to use in the loading view]
  * @param imageStyle	[css inline-css style you would to add to the loading image...e.g: to reduce the size...Use fn: addImageStyle() | setImageStyle() to add/set/change inline-css of loadingView image]
  * @returns
@@ -18,7 +18,7 @@ LoadingView = function(options) {
 	var defaultOption = {};
 	
 	defaultOption.selector = "body";
-	defaultOption.state = false;
+	defaultOption.state = true;
 	defaultOption.image = "loadingImage.gif";			//You can change this anytime anyday based on your image location.
 	defaultOption.imageClassName = "loadingImage";
 	defaultOption.imageStyle = "left:0; right:0; margin:0 auto; position:absolute; top:25%;";
@@ -120,6 +120,11 @@ function setElementLoading(selector, state, loadingImage)
 
 
 //Using jQuery
+/**
+    $('.body').loadingView();			//start loadingView 
+    $('.selector').loadingView({'state':true});		//Or start loadingView
+    $('.selector').loadingView({'state':false}); 	//Stop LoadingView
+*/
 (function($) {
 
     $.fn.loadingView = function (newOptions) {
