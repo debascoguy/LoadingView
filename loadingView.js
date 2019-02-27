@@ -28,7 +28,7 @@ LoadingView = function(options) {
 	 }
 	 
 	 var getOption = function(field){
-	        return (typeof options[field] === 'undefined' || undefined == options[field] || null==options[field] || "" == options[field] ) ? defaultOption[field] : options[field];
+	        return (typeof options[field] === 'undefined' || undefined === options[field] || null===options[field] || "" === options[field] ) ? defaultOption[field] : options[field];
 	 };
 	
 	 this.selector = getOption('selector');
