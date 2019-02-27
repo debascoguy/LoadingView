@@ -4,5 +4,7 @@ LoadingView is a Javascript library using jQuery to implement a simple element l
 #BASIC jQuery Usage Example
 
 $('.body').loadingView();			//start loadingView 
+
 $('.selector').loadingView({'state':true});		//Or start loadingView
+
 $('.selector').loadingView({'state':false}); 	//Stop LoadingView
