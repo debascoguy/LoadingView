@@ -60,7 +60,7 @@ LoadingView = function(options) {
 	 }
 	 
 	 this.setImageStyle = function(imageStyle) {
-		 this.imageStyle = +imageStyle;
+		 this.imageStyle = imageStyle;
 	 }
 	 
 	 this.addImageStyle = function(imageStyle) {
